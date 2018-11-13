@@ -88,18 +88,13 @@
                 <div class="col-md-4">
                     <label>Browse Categories</label>
                     <select type="text" name="location" class="form-control">
-                        <option>All categories </option>
-                        <option>Properties </option>
-                        <option>Used Cars </option>
-                        <option>Furniture </option>
-                        <option>Jobs </option>
-                        <option>Electronics & Appliances </option>
-                        <option>Mobiles </option>
-                        <option>Bikes </option>
-                        <option>Books, Sports & Hobbies</option>
-                        <option>Fashion </option>
-                        <option>Pets </option>
-                        <option>Services </option>
+                        @foreach($cat as $k => $c)
+                        <optgroup label="{{$k}}">
+                            @foreach($c as $s)
+                            <option value="{{$s}}">{{$s}} </option>
+                            @endforeach
+                        </optgroup>
+                        @endforeach
                     </select>
                 </div>
                 <div class="col-md-4">
@@ -114,3 +109,31 @@
                     </div>
                 </div>
             </div>
+
+
+
+All in Jobs 
+Data entry & Back office
+BPO & Telecaller 
+Operator & Technician 
+Sales & Marketing 
+Cook 
+Driver 
+Hotel & Travel Executive data
+IT Engineer & Developer data
+Designer 
+Office Assistant 
+Receptionist & Front office data
+Delivery & Collection 
+Accountant 
+Teacher 
+Others 
+
+
+
+
+
+
+
+
+

@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
-Route::get('/adpostingform', function () {
-    return view('adpostform');
-});
+Route::get('/adpostingform', 'HomeController@postAdForm');

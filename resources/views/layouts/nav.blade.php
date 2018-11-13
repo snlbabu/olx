@@ -1,4 +1,4 @@
-<div class="row" style="height: 15vh">
+<div class="row">
     <div class="col-md-1" style="border:1px solid red;height: 100%">
         <svg height="100" width="100">
           <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />

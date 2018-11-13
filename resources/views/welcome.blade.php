@@ -30,7 +30,7 @@
             </div>
             <div class="row" style="border:1px solid red; padding: 10px">
                 <div class="col-md-2" style="border:1px solid red; padding: 0px">
-                    <img src="https://via.placeholder.com/100x100" class="media-object" style="width: 150px; height: 150px;">
+                    <img src="https://via.placeholder.com/100x100" class="media-object" style="width: 100%; height: 100%;">
                 </div>
                 <div class="col-md-10" style="border:1px solid red;">
                     <h4 class="media-heading" style="color:purple">Title of the posting</h4>
