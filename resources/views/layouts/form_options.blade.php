@@ -297,7 +297,12 @@
 	        <label for="Model" >Model*</label>
 	    </div>
 	    <div class="col-md-3">
-	        <input type="text" class="form-control" id="Model">
+	        <select class="form-control" id="Model">
+	        	<option>Choose</option>
+	        	@foreach($models as $model)
+	        	<option>{{$model}}</option>
+	        	@endforeach
+	        </select>
 	    </div>
 	</div>
 	@endif
@@ -319,7 +324,13 @@
 	        <label for="Fuel" >Fuel*</label>
 	    </div>
 	    <div class="col-md-3">
-	        <input type="text" class="form-control" id="Fuel">
+	        <select class="form-control" id="Fuel">
+	        	<option>Choose</option>
+	        	<option>Petrol</option>
+	        	<option>Diesel</option>
+	        	<option>LPG</option>
+	        	<option>CNG & Hybrids</option>
+	        </select>
 	    </div>
 	</div>
 	@endif
@@ -384,6 +395,41 @@
 	        </select>
 	    </div>
 	</div>
+
+@elseif ($cat1 === 'Bikes')
+	
+	<div class="row form-group" style="margin-top: 20px">
+	    <div class="col-md-4" style="text-align: right;">
+	        <label for="Model" >Model*</label>
+	    </div>
+	    <div class="col-md-3">
+	        <select class="form-control" id="Model">
+	        	<option>Choose</option>
+	        	@foreach($models as $model)
+	        	<option>{{$model}}</option>
+	        	@endforeach
+	        </select>
+	    </div>
+	</div>
+	
+	<div class="row form-group" style="margin-top: 20px">
+	    <div class="col-md-4" style="text-align: right;">
+	        <label for="Year" >Year*</label>
+	    </div>
+	    <div class="col-md-3">
+	        <input type="number" class="form-control" id="Year">
+	    </div>
+	</div>
+
+	<div class="row form-group" style="margin-top: 20px">
+	    <div class="col-md-4" style="text-align: right;">
+	        <label for="driven" >KM Driven*</label>
+	    </div>
+	    <div class="col-md-3">
+	        <input type="number" class="form-control" id="driven">
+	    </div>
+	</div>
+
 @else
     
 @endif

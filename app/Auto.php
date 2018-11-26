@@ -13,7 +13,7 @@ class Classified extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'cat1', 'cat2', 'cat3', 'price', 'ad_description', 'img1', 'img2', 'img3', 'img4', 'name', 'phone', 'city', 
+        'title', 'cat1', 'cat2', 'cat3', 'price', 'model', 'year', 'fuel', 'km_driven', 'ad_description', 'img1', 'img2', 'img3', 'img4', 'name', 'phone', 'city', 
     ];
 
 }

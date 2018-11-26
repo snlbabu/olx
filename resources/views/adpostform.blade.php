@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<form >
+<form method="post" action="">
 <div class="row" style="">
     <div class="col-md-12" style="border:1px solid lightblue">
         <h3>Submit a Free Classified Ad</h3>
